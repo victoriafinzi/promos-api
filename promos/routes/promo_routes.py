@@ -5,6 +5,7 @@ from utils.decorators import (
     response,
     admin_user_required
 )
+from utils.send_message import send_message
 from promos.models.promos_model import (
     create_promo,
     get_promo,
@@ -12,6 +13,7 @@ from promos.models.promos_model import (
     update_promo,
     delete_promo
 )
+from users.models.user_model import get_clients
 from promos.serializers.promos_serializer import (
     PromosSchema
 )
@@ -30,7 +32,11 @@ promos_schemas = PromosSchema(many=True)
 @jwt_required()
 def new_promo(data):
     try:
-        return create_promo(data)
+        promo = create_promo(data)
+        clients = get_clients()
+        for c in clients:
+            send_message(promo.description, '+' + c.phone_number)
+        return promo
     except Exception as e:
         abort(400, f"Failed to create promo: {str(e)}")
 

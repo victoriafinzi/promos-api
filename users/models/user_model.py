@@ -12,6 +12,10 @@ def get_user(id):
     return g.db_session.query(Users).filter(Users.id == id).first()
 
 
+def get_clients():
+    return g.db_session.query(Users).filter(Users.user_type == "CLIENT").all()
+
+
 def update_user(data):
     g.db_session.merge(data)
     g.db_session.commit()

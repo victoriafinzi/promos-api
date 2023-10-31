@@ -5,8 +5,7 @@ from sqlalchemy.sql import func
 
 
 class Promos(db.Model):
-    def __init__(self, id, created_by, product_name, price, discount, expiration_date, description):
-        self.id = id
+    def __init__(self, created_by, product_name, price, discount, expiration_date, description):
         self.created_by = created_by
         self.product_name = product_name
         self.price = price
