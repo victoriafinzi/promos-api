@@ -1,3 +1,14 @@
+# Projeto de Extensão UNOPAR: Inovação Tecnológica para Negócios Locais
+
+Olá! 🐱
+Este repositório foi criado para guardar o código realizado para a materia de atividade extensionista da faculdade Unopar. 
+
+# Sobre o Projeto:
+Neste projeto, exploramos maneiras criativas de utilizar a tecnologia para fortalecer pequenos negócios locais. A "Casa de Carne Medalha Milagrosa" foi o nosso cenário de estudo, onde desenvolvemos uma aplicação web para notificar os clientes sobre promoções em tempo real. Utilizamos linguagens de programação como Python e frameworks como Flask, além de tecnologias como QR codes e notificações via celular para criar uma solução intuitiva e eficaz.
+
+# Objetivo:
+Nosso principal objetivo foi não apenas aprimorar minhas habilidades técnicas, mas também contribuir de maneira tangível para a comunidade local. Ao facilitar a comunicação entre a loja e seus clientes, buscamos aumentar o alcance das promoções e, consequentemente, impulsionar o negócio local.
+
 # promos-api
 Python API 
 
